@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>M&N Wedding</title>
+  <link rel="icon" href="https://raw.githubusercontent.com/nivandjikov/WeddingInvite/master/icon.png">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  
+  <style>
+    body {
+      background: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 681px;
+      height: 960px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      height: 100%;
+    }
+
+    .swiper-slide img {
+      height: 100%;
+      -webkit-box-shadow: 2px 3px 16px -2px rgba(0,0,0,0.75);
+      -moz-box-shadow: 2px 3px 16px -2px rgba(0,0,0,0.75);
+      box-shadow: 2px 3px 16px -2px rgba(0,0,0,0.75);
+    }
+
+    .swiper-button-prev {
+    left: -50px;
+    color: #dfa952;
+    }
+    .swiper-button-next {
+    right: -50px;
+    color: #dfa952;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="swiper-container" title="M&N">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/nivandjikov/WeddingInvite/master/1.jpg" alt="Първи слайдер"></div>
+      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/nivandjikov/WeddingInvite/master/2.jpg" alt="Втори слайдер"></div>
+    </div>
+    <!-- Тук са бутоните за смяна на слайдерите, те са опционални - тъй като може да се swipe-ва с мишката-->
+    <div class="swiper-button-prev" title="Върни предишния слайд"></div>
+    <div class="swiper-button-next" title="Следващ слайд"></div>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'flip',
+      grabCursor: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+
+</html>
